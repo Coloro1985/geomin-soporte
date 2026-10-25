@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manual de usuario - GeoMin PRO</title>
+<meta name="description" content="Manual de usuario de GeoMin PRO: grilla UTM, áreas, propiedades, suscripción y la ayuda ⓘ de cada pestaña.">
+<style>
+  :root{--paper:#FAF7F2;--ink:#2B211C;--muted:#6B5D55;--accent:#B85C1A;--border:#E5DCD3}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-text-size-adjust:100%}
+  .wrap{max-width:680px;margin:0 auto;padding:48px 24px 80px}
+  h1{font-size:32px;line-height:1.2;margin:0 0 24px;letter-spacing:-.02em}
+  h2{font-size:21px;margin:36px 0 10px;letter-spacing:-.01em}
+  h3{font-size:18px;margin:28px 0 8px;scroll-margin-top:16px}
+  h3:target{color:var(--accent)}
+  p{margin:0 0 14px}
+  ul,ol{margin:0 0 14px;padding-left:22px}
+  li{margin-bottom:8px}
+  a{color:var(--accent)}
+  code{font-size:15px}
+  table{border-collapse:collapse;margin:0 0 14px}
+  td,th{border:1px solid var(--border);padding:4px 10px}
+  .back{display:inline-block;margin-bottom:28px;font-size:15px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="index.html">&larr; Soporte de GeoMin PRO</a>
+<h1 id="manual-de-usuario-geomin-pro">Manual de usuario — GeoMin
+PRO</h1>
+<p>Cómo funciona cada parte de GeoMin PRO. La sección «Ayuda ⓘ» explica
+los conceptos que abres con el botón ⓘ de cada pestaña.</p>
+<h2 id="grilla-utm-gratis">Grilla UTM (gratis)</h2>
+<ul>
+<li><p>El botón con el símbolo <code>#</code>, en la columna derecha del
+mapa, muestra u oculta la grilla. Cuando está activa, el botón se pone
+naranjo.</p></li>
+<li><p>La app recuerda cómo la dejaste al cerrarla.</p></li>
+<li><p>La separación entre líneas depende del zoom:</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Lo que se ve en pantalla</th>
+<th>Separación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Muy lejos (más de 1,5° de ancho)</td>
+<td>Sin grilla; aparece el aviso “Grilla UTM · acerca el mapa para
+verla”</td>
+</tr>
+<tr>
+<td>Región</td>
+<td>10 km</td>
+</tr>
+<tr>
+<td>Faena</td>
+<td>1 km</td>
+</tr>
+<tr>
+<td>Muy cerca</td>
+<td>100 m</td>
+</tr>
+</tbody>
+</table></li>
+<li><p>Cada línea lleva su coordenada, por ejemplo
+<code>N 7.001.000</code> o <code>E 395.000</code>. Una esquina del mapa
+indica el datum y el huso, por ejemplo “UTM PSAD56 (Hayford) · Huso 19 ·
+1 km”.</p></li>
+<li><p>La grilla usa el datum que elijas arriba (PSAD56 o SIRGAS). El
+huso se calcula con el centro del mapa.</p></li>
+</ul>
+<h2 id="seleccionar-área-pro">Seleccionar área (PRO)</h2>
+<ol type="1">
+<li>Toca el botón de selección (un recuadro), en la columna derecha del
+mapa. Si no tienes PRO, se abre la pantalla de suscripción.</li>
+<li>Aparece “Arrastra para marcar un área”. Mientras el modo está
+activo, el mapa no se mueve.</li>
+<li>Arrastra un rectángulo con el dedo. Para salir sin marcar, toca
+<strong>Cancelar</strong>.</li>
+<li>Al soltar se abre la lista de concesiones del área, con nombre, rol,
+titular, hectáreas y situación. Las filas marcadas “Mía” son de Mis
+propiedades.</li>
+<li>Toca una fila para abrir su ficha.</li>
+</ol>
+<p>Qué concesiones entran en la lista: - Toda concesión <strong>cuyo
+polígono toca el rectángulo</strong>, aunque sólo sea en el borde. - No
+entran las que sólo quedan cerca, aunque su contorno general alcance el
+rectángulo. Por ejemplo, una concesión en forma de L que rodea el área
+sin tocarla queda fuera. - Si el rectángulo cae completo dentro de una
+concesión grande, esa concesión sí aparece.</p>
+<h2 id="mis-propiedades-importar-kml-kmz-es-pro">Mis propiedades
+(importar KML / KMZ es PRO)</h2>
+<h3 id="guardar">Guardar</h3>
+<ol type="1">
+<li>En la pestaña <strong>KML / KMZ</strong>, toca <strong>Importar KML
+/ KMZ</strong> y elige el archivo.</li>
+<li>Toca <strong>Guardar en Mis propiedades</strong>.</li>
+<li>El mensaje de abajo dice cuántas guardaste y cuántas superposiciones
+encontró con el catastro, por ejemplo: “Guardadas 3 propiedad(es); 2
+superposición(es) con el catastro.”</li>
+</ol>
+<p><strong>Qué se guarda.</strong> Se guarda el polígono tal como está
+en el editor en ese momento: - Si no tocaste nada, se guarda
+<strong>igual que venía en el archivo</strong>. Importar no mueve ningún
+vértice. - Si <strong>arrastraste un vértice</strong> con
+<strong>Ajustar a grilla UTM</strong> activado, ese vértice se ajustó a
+la grilla: 100 m en pertenencias y 1.000 m en exploración. El ajuste
+viene activado por defecto, pero sólo actúa cuando arrastras. - Si
+tocaste <strong>Rectificar a rectángulo N-S</strong>, se guarda la forma
+rectificada.</p>
+<p><strong>Contra qué se revisan las superposiciones.</strong> Contra
+las concesiones que trae la app y las que tu teléfono ya descargó de
+SERNAGEOMIN al navegar el mapa. Por eso el mismo archivo puede dar
+distinto número de superposiciones en dos teléfonos.</p>
+<p><strong>Guardar dos veces no duplica</strong> (desde el build 11).
+Una propiedad reemplaza a la guardada si tiene el mismo <strong>nombre y
+las mismas coordenadas</strong>, aunque hayas vuelto a importar el
+archivo. Si cambiaste un vértice o el nombre, se guarda como una
+propiedad nueva y la anterior sigue ahí; bórrala desde su ficha si ya no
+la quieres.</p>
+<h3 id="ver-en-el-mapa">Ver en el mapa</h3>
+<ul>
+<li>Tus propiedades se ven con <strong>borde naranjo punteado</strong> y
+una estrella. Se dibujan encima de las concesiones públicas.</li>
+<li>Siguen ahí después de cerrar y abrir la app. Se guardan en un
+archivo propio del teléfono (<code>mis_propiedades_v1.json</code>),
+separado del catastro, así que actualizar el catastro desde SERNAGEOMIN
+no las borra.</li>
+</ul>
+<h3 id="borrar">Borrar</h3>
+<p>Toca la estrella de la propiedad, abre su ficha y usa
+<strong>Eliminar de Mis propiedades</strong>. El polígono desaparece del
+mapa.</p>
+<h2 id="cuenta-y-suscripción">Cuenta y suscripción</h2>
+<p>En la pestaña <strong>Padrón</strong>, el botón
+<strong>Suscripción</strong> (arriba a la derecha) abre: -
+<strong>Cancelar o cambiar plan:</strong> la pantalla de Apple para
+cancelar o cambiar de plan. Al cerrarla, la app vuelve a revisar si
+sigues siendo PRO. - <strong>Restaurar compras:</strong> recupera una
+suscripción comprada en otro dispositivo o después de reinstalar.</p>
+<p>Si cancelas, conservas PRO hasta el final del periodo ya pagado.</p>
+<h2 id="ayuda">Ayuda ⓘ</h2>
+<p>En las pestañas <strong>Patentes</strong>,
+<strong>Simulador</strong>, <strong>KML / KMZ</strong> y
+<strong>Padrón</strong>, el botón ⓘ junto a un concepto abre una hoja
+con una explicación corta y, debajo, el texto legal tal como lo muestra
+la app. Cerrar la hoja no cambia ningún dato. Cada tema de abajo
+corresponde a una hoja.</p>
+<h3 id="regimenPertenencia">Situación de la pertenencia</h3>
+<p>La patente de una pertenencia depende de su situación. Si tiene
+trabajos acreditados o algún beneficio, paga la tarifa rebajada; si no
+tiene trabajos, paga una escala que sube con los años. La hoja muestra
+además la cita del régimen que elegiste.</p>
+<h3 id="patenteAnual">Patente anual</h3>
+<p>Es lo que pagas cada año para mantener la concesión. Se paga en marzo
+y la calculadora la estima con la superficie, la situación y el valor de
+la UTM.</p>
+<h3 id="tasaFiscal">Tasa fiscal</h3>
+<p>Es un pago único que se hace al pedir la concesión. Tiene un plazo
+fatal: 30 días corridos desde la presentación al juzgado (D0).</p>
+<h3 id="patenteProporcional">1ª patente proporcional</h3>
+<p>Es la primera patente de la concesión nueva. Cubre sólo los días que
+faltan hasta el último día de febrero siguiente, en proporción a la
+tarifa anual.</p>
+<h3 id="riesgoRemate">Remate por no pagar</h3>
+<p>Si no pagas la patente en marzo, la concesión entra en la nómina de
+remate. Una vez enviada la nómina, sacarla cuesta el doble de lo
+adeudado.</p>
+<h3 id="tipoTramite">Pedimento o manifestación</h3>
+<p>El pedimento pide una concesión de exploración; la manifestación, una
+de explotación (pertenencia). La app aplica reglas distintas a cada
+una.</p>
+<h3 id="sistemaCoordenadas">Datum, huso y punto de origen</h3>
+<p>Las coordenadas UTM dependen del datum (PSAD56 o SIRGAS) y del huso.
+El punto de origen indica si las coordenadas son el punto medio de la
+concesión o su vértice nor-oeste.</p>
+<h3 id="dimensionesRectangulo">Tamaño del rectángulo</h3>
+<p>La concesión es un rectángulo orientado norte-sur y este-oeste. Su
+ancho y su largo dan la superficie en hectáreas.</p>
+<h3 id="resultadoColisiones">Choques con otras concesiones</h3>
+<p>La app compara tu rectángulo con las concesiones que tiene en el
+teléfono y calcula cuánta superficie se superpone con cada una. Es una
+referencia: no reemplaza la revisión de un abogado.</p>
+<h3 id="plazosConstitucion">Plazos para constituir</h3>
+<p>Constituir una concesión sigue una serie de pasos, cada uno con su
+plazo. La lista muestra cada paso, su fecha estimada y qué pasa si se
+vence.</p>
+<h3 id="editorVertices">Editor de vértices</h3>
+<p>Arrastra un vértice para mover esa esquina del polígono. Importar un
+archivo no mueve ningún vértice.</p>
+<h3 id="ajusteGrilla">Ajustar a grilla UTM</h3>
+<p>Al arrastrar un vértice, se acomoda a la grilla más cercana: 100 m en
+pertenencias y 1.000 m en exploración. Importar un archivo no mueve
+nada; el ajuste sólo actúa cuando arrastras.</p>
+<h3 id="rectificar">Rectificar a rectángulo N-S</h3>
+<p>Convierte el polígono en un rectángulo orientado norte-sur y
+este-oeste. Si guardas después, se guarda la forma rectificada.</p>
+<h3 id="conversorDatum">Conversor PSAD56 ⇄ SIRGAS</h3>
+<p>Convierte coordenadas entre PSAD56 y SIRGAS. Un mismo punto tiene
+coordenadas distintas en cada datum, así que conviene saber en cuál está
+cada documento.</p>
+<h2 id="aviso">Aviso</h2>
+<p>La información del catastro es referencial, viene de SERNAGEOMIN y
+puede no estar actualizada. No reemplaza la consulta oficial ni la
+revisión de un abogado.</p>
+
+</div>
+</body>
+</html>
